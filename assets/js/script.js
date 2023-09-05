@@ -41,9 +41,9 @@ const milliseconds = setInterval(function(){
     const difference = tomorrowDate - today;
 
     //Math.floor formula su w3 school per trovare ore minuti e secondi
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
     //stampo risultato in pagina
     document.querySelector(".countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s "; 
