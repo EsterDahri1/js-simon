@@ -27,7 +27,12 @@ const tomorrowDate = new Date("Sept, 6 2023 09:30:00").getTime();
 
 //funzione per countdown
 const milliseconds = setInterval(function(){
-
     
+    //data di oggi
+    const today = new Date().getTime();
+
+    //differenza di tempo da oggi a domani
+    const difference = tomorrowDate - today;
+
 }, 1000);
 
