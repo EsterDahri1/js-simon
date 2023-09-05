@@ -22,3 +22,12 @@ Tools:
 - queryselector per stampare in pagina
 */
 
+//Data di domani
+const tomorrowDate = new Date("Sept, 6 2023 09:30:00").getTime();
+
+//funzione per countdown
+const milliseconds = setInterval(function(){
+
+    
+}, 1000);
+
