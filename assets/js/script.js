@@ -10,6 +10,12 @@ Da quanti minuti è composta un'ora? //60min
 Da quanti secondi è composto un minuto? //60s
 Da quanti millisecondi è composto un secondo? //1000ms
 Quanti millisecondi mi separano da domani alle 9:30? //1693899000000ms
+
+//Per trovarlo si fa in questo modo:
+    const date = new Date("09/05/2023 09:30:00"); 
+    const ms = date.getTime(); 
+    console.log(ms);
+
 Esiste un oggetto JS in grado di gestire le date? Date()
 Esistono dei metodi per trasformare una data in millisecondi? //date.getTime();
 
