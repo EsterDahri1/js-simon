@@ -34,5 +34,13 @@ const milliseconds = setInterval(function(){
     //differenza di tempo da oggi a domani
     const difference = tomorrowDate - today;
 
+    //Math.floor formula su w3 school per trovare ore minuti e secondi
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    //stampo risultato in pagina
+    document.querySelector(".countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s "; 
+
 }, 1000);
 
